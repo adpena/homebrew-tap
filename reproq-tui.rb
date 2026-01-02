@@ -5,21 +5,21 @@
 class ReproqTui < Formula
   desc "Modern realtime TUI dashboard for Reproq Worker."
   homepage "https://github.com/adpena/reproq-tui"
-  version "0.0.109"
+  version "0.0.110"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.109/reproq-tui_0.0.109_darwin_amd64.tar.gz"
-      sha256 "28b614552269c39de43893bb522bca9712b1fe2e09b5646e9f6c1921ad455e2f"
+      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.110/reproq-tui_0.0.110_darwin_amd64.tar.gz"
+      sha256 "7ae7ea5e5c6714934f6ede497ab1eb67d9c8f9031dea3eb17f5e502146a61b70"
 
       def install
         bin.install "reproq-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.109/reproq-tui_0.0.109_darwin_arm64.tar.gz"
-      sha256 "0cf8f702893d3da306e7342217be56227209b8bdf2e40e7e7626daa90b4534f6"
+      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.110/reproq-tui_0.0.110_darwin_arm64.tar.gz"
+      sha256 "7b9c46501490c14c6a91cfefa7634bcdb0a2d0b799fe6545d90d24c5e47037fe"
 
       def install
         bin.install "reproq-tui"
@@ -29,15 +29,15 @@ class ReproqTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.109/reproq-tui_0.0.109_linux_amd64.tar.gz"
-      sha256 "db5d799ddb3151fb7843c035c8bf50ea61fda8d488b074351d96475dfe7a26c6"
+      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.110/reproq-tui_0.0.110_linux_amd64.tar.gz"
+      sha256 "aead2fbbc658b42c9acc4eb44f384e6d09f086c7bf1c03fa4d35240fe08f9d2d"
       def install
         bin.install "reproq-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.109/reproq-tui_0.0.109_linux_arm64.tar.gz"
-      sha256 "02b463411d8b733a110ffaab897007180852afdcda2feeb454732d217a8a121f"
+      url "https://github.com/adpena/reproq-tui/releases/download/v0.0.110/reproq-tui_0.0.110_linux_arm64.tar.gz"
+      sha256 "36afe398d5926b3b2bd9da48742ef43b842c155664464bf4b6629f7a1e46d030"
       def install
         bin.install "reproq-tui"
       end
