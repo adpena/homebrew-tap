@@ -45,3 +45,7 @@ project and include:
 - your Homebrew version
 - the exact `brew install` or `brew upgrade` output
 - the formula version you attempted to install
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).
